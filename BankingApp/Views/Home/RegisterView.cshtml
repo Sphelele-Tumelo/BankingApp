@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Tumelo Bank";
+}
+
+@model BankingApp.Models.RegisterModel
+
+<div class="text-center">
+    <h3 class="display-4">Register</h3>
+    <br/>
+    <br/>
+    <br/>
+</div>
+
+<form asp-action="Index" asp-controller="Home">
+    <div class="d-flex flex-column">
+
+        <label for="Initials">Initials*</label>
+        <select class="form-control" asp-for="Initial">
+         <option value="Male">Mr</option>
+         <option value="Female">Mrs</option>
+         <option value="Female">Ms</option>
+        </select>
+        
+        <label class="mt-4"for="FirstName">First Name*</label>
+        <input class="form-control" type="text" placeholder="eg.Smith" asp-for="FirstName"/>
+
+        <label class="mt-4" for="MiddleName">Middle Name*</label>
+        <input type="text" placeholder="eg.Innocent" asp-for="MiddleName"/>
+
+        <label class="mt-4" for="Surname">Surname*</label>
+        <input type="text" placeholder="eg.Hartmann" asp-for="Surname"/>
+
+        <label class="mt-4" for="Id">ID*</label>
+        <input type="number" placeholder="I.D Number" asp-for="Id" />
+
+
+        <label class="mt-4" for="DateOfBirth">Date Of Birth*</label>
+        <input type="date" placeholder="today-date" asp-for="DateOfBirth"/>
+
+        <label class="mt-4"for="ContactNumbers">Contact Details*</label>
+        <input type="number" placeholder="eg.123456" asp-for="ContactDetails"/>
+
+        <label class="mt-4" for="Email">Email Address*</label>
+        <input type="text" placeholder="eg.Hartmann" asp-for="Email"/>
+
+        <label class="mt-4" for="StreetNumber">Street Number*</label>
+        <input type="number" placeholder="" asp-for="StreetNumber"/>
+
+        <label class="mt-4" for="StreetName">Street Name*</label>
+        <input type="text" placeholder="Weston Street / Weston Road" asp-for="StreetName"/>
+
+        <label class="mt-4" for="City">City*</label>
+        <input class="form-control" type="text" placeholder="" asp-for="City" />
+
+        <label class="mt-4" for="PostalCode">
+            Postal Code
+        </label>
+        <input type="number" placeholder="1475" asp-for="PostalCode"/>
+
+    </div>
+</form>
+
+<div class="text-center mt-4">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary" type="submit">Register</a>
+</div>

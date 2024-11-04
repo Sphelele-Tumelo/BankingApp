@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Tumelo Bank";
+}
+
+@model BankingApp.Models.ExpenseModel
+
+<form asp-action="ExpenseView" asp-controller="Home">
+    <label class="mt-4">Id</label>
+    <input   class="form-control"  type="number" asp-for="id" value="0"  placeholder="0"/>
+
+    <label class="mt-4">Value R</label>
+    <input type="number" class="form-control" placeholder="0" asp-for=" Value" step="0.01"  />
+
+    <labe class="mt-4">Description</labe>
+    <input type="text" class="form-control" placeholder="Add Your Description" asp-for="Description"/>
+
+     <button class="btn btn-primary mt-4" type="submit">Add</button>
+
+</form>
+@*
+<div class="text-left">
+    <a asp-controller="Home" asp-action="ExpenseView" class="btn btn-outline-primary">
+    </a>
+</div>
+
+*@

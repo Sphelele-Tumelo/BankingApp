@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Tumelo Bank";
+}
+
+@model BankingApp.Models.ExpenseModel
+
+<div class="text-center">
+    <h3 class="display-4">Welcome to Expense Page</h3>
+    <br />
+    <p>Kindly provide values for the (*) required</p>
+    <br />
+    <br />
+
+    <a asp-controller="Home" asp-action="CreateEditExpenses" class="btn btn-primary">Create New</a>
+    <a asp-controller="Home" asp-action="ExpenseView" class="btn btn-primary">Expenses</a>
+</div>

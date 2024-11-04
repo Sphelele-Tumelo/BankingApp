@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Tumelo Bank";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Back</h1>
+    <br/>
+    <br/>
+    <br/>
+    <form >
+        <div class="d-flex flex-column">
+           <label for="EmailAddress">Email Address</label>
+           <input type="email" placeholder="Enter Your Email"/>
+
+           <label for="PasswordLabel">Password</label>
+           <input type="password" placeholder="Enter Your Password"/>
+
+        </div>
+    </form>
+    <div class="mt-4">
+        <a asp-action="LoginView"  asp-action="LoginModel" class="btn btn-primary">Sign In</a>
+    </div>
+</div>

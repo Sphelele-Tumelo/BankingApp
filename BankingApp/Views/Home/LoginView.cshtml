@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Tumelo Bank";
+}
+
+@model BankingApp.Models.LoginModel
+
+<div class="text-center">
+    <h3 class="display-4">Dashboard</h3>
+    <br />
+    <br />
+    <br />
+</div>
+
+<div class="text-left mb-2">
+
+   <ul class="nav flex-column">
+    <li class="nav-item">Name:</li>
+    <li class = "nav-item">Surname: </li>
+    <li class = "nav-item">Identification Number: </li>
+    <li class="nav-item">Contact Details: </li>
+    <li class="nav-item">Email Address: </li>
+   </ul>
+   <br />
+</div>
+
+<div>
+    <table>
+    <tr>
+       <th>Account Details </th>
+    </tr> 
+    <tr>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <th>
+            Money in(R)
+        </th>
+    </tr>
+    <tr>
+        <th>
+            Money out(-R)
+        </th>
+    </tr>
+</table>
+</div>
+
+<h3 class="text-center">OR</h3>
+<p>Calculate your expenses below</p>
+<div>
+    <a asp-controller="Home" asp-action="Expense" class="btn btn-primary">Calculate</a>
+</div>
